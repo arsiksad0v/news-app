@@ -11,7 +11,7 @@ const newsSlice = createSlice({
     initialState: [],
     reducers: {},
     extraReducers: (builder) => {
-        builder.addCase(fetchNews.fulfilled, (state, action) => action.payload);
+        builder.addCase(fetchNews.fulfilled, (action) => action);
     }
 });
 
